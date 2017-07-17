@@ -1,0 +1,67 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "@types/promise-retry",
+        "scope": "@types",
+        "escapedName": "@types%2fpromise-retry",
+        "name": "@types/promise-retry",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/jwork/Documents/git/promise-retry"
+    ]
+  ],
+  "_from": "@types/promise-retry",
+  "_id": "@types/promise-retry@1.1.1",
+  "_inBundle": false,
+  "_location": "@types/promise-retry",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": false,
+    "raw": "@types/promise-retry",
+    "name": "@types/promise-retry",
+    "escapedName": "@types%2fpromise-retry",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_spec": "@types/promise-retry",
+  "_where": "/Users/jwork/Documents/git/promise-retry",
+  "author": {
+    "name": "IndigoUnited",
+    "email": "hello@indigounited.com",
+    "url": "http://indigounited.com"
+  },
+  "bugs": {
+    "url": "https://github.com/IndigoUnited/node-promise-retry/issues/"
+  },
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Retries a function that returns a promise, leveraging the power of the retry module.",
+  "devDependencies": {},
+  "homepage": "https://github.com/IndigoUnited/node-promise-retry#readme",
+  "keywords": [
+    "retry",
+    "promise",
+    "backoff",
+    "repeat",
+    "replay"
+  ],
+  "license": "MIT",
+  "main": "",
+  "name": "@types/promise-retry",
+  "repository": {
+    "type": "git",
+    "url": "https://jamiebirchsandt@bitbucket.org/jamiebirchsandt/promise-retry-typings.git"
+  },
+  "scripts": {},
+  "typings": "index.d.ts",
+  "version": "1.1.1"
+}
