@@ -4,7 +4,7 @@
     "sourceMap": true, // Can comment this out if Webpack is set to provide sourcemap.
     "target": "es5", // the Javascript version to target.
     "baseUrl": ".", // This makes all URLs relative to this config file's containing folder (rather than relative to each source file!)
-    "outDir": "./build", // Can comment this out if Webpack is outputting the .js files as a bundle anyway.
+    "outDir": "./build/jsEquivalent", // Can comment this out if Webpack is outputting the .js files as a bundle anyway.
     "allowJs": true, // Allows JavaScript files to be compiled too (alongside .ts files).
 
     // Only for 'satellite' typings, such as lodash, ie. that are NOT bundled alongside the src.
@@ -25,8 +25,9 @@
 
   // Otherwise it will try to compile the whole repo!
   "exclude": [
+    "webpack.config.js",
     "my-library",
     "node_modules", // so as not to accidentally pull in any .ts(x) files from node_modules (eg. 'react-babel-karma-gulp-happypack').
-    "dist" // To prevent "Cannot write file ... as it would overwrite the file" error: https://github.com/Microsoft/TypeScript/issues/14538
+    "build" // To prevent "Cannot write file ... as it would overwrite the file" error: https://github.com/Microsoft/TypeScript/issues/14538
   ]
 }
