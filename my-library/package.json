@@ -1,0 +1,25 @@
+{
+  "name": "my-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "typings": "",
+  "files": [
+    "dist"
+  ],
+  "author": "",
+  "scripts": {
+    "start": "echo 'webpack bundling is not the correct usage for a library; use npm run lib'",
+    "lib": "./node_modules/typescript/bin/tsc"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/es6-promise": "0.0.32",
+    "ts-loader": "^2.2.2",
+    "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "promise-retry": "1.1.1"
+  }
+}

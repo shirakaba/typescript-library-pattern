@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "watch": true, // This watches for filesystem changes, recompiling upon save.
+        "sourceMap": true, // Can comment this out if Webpack is set to provide sourcemap.
+        "target": "es5", // the Javascript version to target.
+        "baseUrl": ".", // This makes all URLs relative to this config file's containing folder (rather than relative to each source file!)
+        "outDir": "dist", // Can comment this out if Webpack is outputting the .js files as a bundle anyway.
+
+        // tsc doesn't emit the mappings of baseUrl to Mocha, so we need to explicitly explain the mapping to
+        // the 'tsconfig-paths' plugin here, which in turn explains it to Mocha.
+        // "paths": {
+        //   "lib/*" : ["./src/*"]
+        // },
+
+        "declaration": true,
+        "allowJs": false, // must be false if declaration is true.
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "typeRoots": [
+            "/node_modules/@types",
+            "/types"
+        ],
+
+        /* This block adds support for ES6 Promises: http://stackoverflow.com/a/32410515/5951226
+         * but, I think, can only compile down as far as ES5. Does NOT add support for Set in ES3/ES5. */
+       "module": "commonjs",
+       "noLib": false
+    },
+
+    // Prevents the compiler from watching any of these sources (directories or files)
+    "exclude": [
+      // "webpack.config.js",
+      "node_modules", // so as not to accidentally pull in any .ts(x) files from node_modules (eg. 'react-babel-karma-gulp-happypack').
+      "dist" // To prevent "Cannot write file ... as it would overwrite the file" error: https://github.com/Microsoft/TypeScript/issues/14538
+    ]
+}
